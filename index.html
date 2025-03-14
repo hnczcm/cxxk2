@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>消消乐游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+		<div id="game-title">畅享星空，您的专属小游戏</div>
+        <div class="game-header">
+            <h1>消消乐</h1>
+            <div class="score-container">
+                <span>分数：</span>
+                <span id="score">0</span>
+            </div>
+        </div>
+        
+        <div class="game-board" id="game-board"></div>
+        
+        <div class="game-controls">
+            <button id="restart-button">重新开始</button>
+            <button id="shuffle-button">重新洗牌</button>
+        </div>
+        
+        <div class="game-message" id="game-message"></div>
+    </div>
+
+    <!-- 音效资源 -->
+    <audio id="swap-sound" src="sounds/swap.mp3" preload="auto"></audio>
+    <audio id="match-sound" src="sounds/match.mp3" preload="auto"></audio>
+    <audio id="no-match-sound" src="sounds/no-match.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html> 
